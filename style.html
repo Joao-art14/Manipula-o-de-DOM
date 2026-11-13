@@ -68,8 +68,11 @@
             background-color: #f4f4f4;
         }
         .selecionada {
-        margin: 10px;
-        border: 2px solid #0079db;
+        border: 2px solid #33db00;
+        background-color: #d5eaff;
+}      
+    .todos{
+        border: 2px solid #0016db;
         background-color: #d5eaff;
 }
     </style>
@@ -155,30 +158,7 @@
             </tr>
         </table></div>
     </center>
-    <script>
-    // Seleciona todas as caixas
-    const caixas = document.querySelectorAll('.caixa');
-
-    // Clique individual nas caixas
-    caixas.forEach(caixa => {
-        caixa.addEventListener('click', function() {
-            this.classList.toggle('selecionada');
-        });
-    });
-
-    // Seleciona todas as caixas
-    function selecionarTodos() {
-        caixas.forEach(caixa => {
-            caixa.classList.add('selecionada');
-        });
-    }
-
-    // Remove a seleção de todas as caixas
-    function removerTodos() {
-        caixas.forEach(caixa => {
-            caixa.classList.remove('selecionada');
-        });
-    }
-</script>
+    
+<script src="script.js"></script>
 </body>
 </html>
